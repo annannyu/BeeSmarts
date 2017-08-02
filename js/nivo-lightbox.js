@@ -301,8 +301,11 @@
             // Set the title
             if(link.attr('title')){
                 var titleWrap = $('<span>', { 'class': 'nivo-lightbox-title' });
+                var description = $('<p>', { 'class': 'nivo-lightbox-discription' });
                 titleWrap.text(link.attr('title'));
+                description.text(link.attr('content'));
                 $('.nivo-lightbox-title-wrap').html(titleWrap);
+                $('.nivo-lightbox-content-wrap').html(description);
             } else {
                 $('.nivo-lightbox-title-wrap').html('');
             }
@@ -317,12 +320,15 @@
             var nav = $('<a href="#" class="nivo-lightbox-nav nivo-lightbox-prev">Previous</a><a href="#" class="nivo-lightbox-nav nivo-lightbox-next">Next</a>');
             var close = $('<a href="#" class="nivo-lightbox-close" title="Close">Close</a>');
             var title = $('<div>', { 'class': 'nivo-lightbox-title-wrap' });
+            var cc = $('<div>', { 'class': 'nivo-lightbox-content-wrap' });
+
 
             var isMSIE = /*@cc_on!@*/0;
             if(isMSIE) overlay.addClass('nivo-lightbox-ie');
 
             wrap.append(content);
             wrap.append(title);
+            wrap.append(cc);
             overlay.append(wrap);
             overlay.append(nav);
             overlay.append(close);
