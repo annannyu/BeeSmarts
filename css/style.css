@@ -12,7 +12,7 @@ body, html {
 	border-radius: 20px;
 }
 h2 {
-	margin: 0 0 20px 0;
+	margin: 15px 0 20px 0;
 	font-weight: 500;
 	font-size: 34px;
 	color: #333;
@@ -35,7 +35,7 @@ h5 {
 	line-height: 20px;
 }
 p {
-	font-size: 16px;
+	font-size: 18px;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -151,6 +151,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .section-title p {
 	font-size: 22px;
 	color: rgba(255,255,255,0.8);
+	width: 90%;
+	margin: 0 auto;
 }
 .section-title hr {
 	margin: 0 auto;
