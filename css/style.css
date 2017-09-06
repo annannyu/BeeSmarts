@@ -638,3 +638,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 #footer a:hover {
 	color: #333;
 }
+.nivo-lightbox-content-wrap {
+	color: white;
+	width: 48%;
+	float: left;
+	margin-top: 15%;
+	font-weight: 900
+}
+.nivo-lightbox-image {
+	width: 50%;
+	float: right;
+}
+@media (max-width: 1000px) {
+	.nivo-lightbox-content-wrap {
+		width: 100%;
+		margin-top: 5%;
+	}
+}
